@@ -103,3 +103,18 @@ body.light-theme footer {
   background-color: #e0e0e0;
   color: #333;
 }
+
+#show-more-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4fc3f7;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#show-more-btn:hover {
+  background-color: #29b6f6;
+}
