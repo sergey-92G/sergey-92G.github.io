@@ -190,3 +190,12 @@ p {
   margin-bottom: 0.3em;
   line-height: 1.35;
 }
+.personal-info {
+  list-style: none;
+  padding: 0;
+  margin-top: 0.5em;
+  font-size: 0.95em;
+}
+.personal-info li {
+  margin: 2px 0;
+}
