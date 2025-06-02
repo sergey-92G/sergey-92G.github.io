@@ -23,3 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+// Кнопка печати
+const printBtn = document.getElementById('print-btn');
+if (printBtn) {
+  printBtn.addEventListener('click', () => {
+    window.print();
+  });
+}
+
