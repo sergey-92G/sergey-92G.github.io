@@ -1,125 +1,153 @@
-/* === Глобальные темы === */
+/* === Строгий чёрно-белый стиль === */
+
 body {
-  font-family: "Segoe UI", sans-serif;
-  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px; /* было 16px по умолчанию — уменьшено */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
-body.dark-theme {
-  background-color: #121212;
-  color: #e0e0e0;
-}
 
-body.light-theme {
-  background-color: #f5f5f5;
-  color: #1a1a1a;
-}
-
-/* Ссылки */
 a {
-  color: #4fc3f7;
-  transition: color 0.2s;
+  color: #000000;
+  text-decoration: none;
 }
-
-body.light-theme a {
-  color: #007acc;
-}
-
 a:hover {
   text-decoration: underline;
 }
 
 /* Header */
 header {
-  padding: 40px 20px;
   text-align: center;
-  background-color: #1e1e1e;
-  color: white;
+  padding: 40px 20px;
+  border-bottom: 2px solid #000;
 }
-
-body.light-theme header {
-  background-color: #007acc;
-  color: white;
+header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
-/* Кнопка переключения темы */
-#theme-toggle {
-  margin-top: 15px;
-  padding: 8px 16px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  background-color: #2e2e2e;
-  color: #e0e0e0;
-  transition: background-color 0.3s;
-}
-
-body.light-theme #theme-toggle {
-  background-color: #f0f0f0;
-  color: #1a1a1a;
+header p {
+  font-size: 1rem;
+  margin-top: 5px;
 }
 
 /* Секции */
 section {
-  margin: 20px auto;
-  padding: 25px;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   max-width: 900px;
-  background-color: #1f1f1f;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-bottom: 1px solid #000;
 }
 
-body.light-theme section {
-  background-color: white;
-}
-
-/* Заголовки */
 h2 {
-  border-left: 5px solid #4fc3f7;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-left: 4px solid #000;
   padding-left: 10px;
-  margin-top: 2em;
-  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1em;
 }
 
-h3, h4 {
-  margin-top: 1.4em;
-  color: #90caf9;
+/* Контейнеры */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-body.light-theme h3, body.light-theme h4 {
-  color: #2c3e50;
+/* Двухколоночный макет */
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-col,
+.right-col {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+/* Кнопка темы и другие убираем */
+#theme-toggle {
+  display: none;
+}
+#show-more-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+#show-more-btn:hover {
+  background: #444;
+}
+
+/* Навыки */
+.skill-stars {
+  margin-left: 8px;
+  font-size: 0.9rem;
+  color: #000;
 }
 
 /* Footer */
 footer {
   text-align: center;
+  font-size: 0.85rem;
   padding: 20px;
-  font-size: 0.9rem;
-  background-color: #1e1e1e;
-  color: #aaa;
+  border-top: 1px solid #000;
+  margin-top: 40px;
+  color: #444;
 }
 
-body.light-theme footer {
-  background-color: #e0e0e0;
-  color: #333;
+/* Сворачиваемые блоки */
+.collapsible-content.collapsed {
+  display: none;
 }
-
-#show-more-btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #4fc3f7;
-  color: #121212;
-  border: none;
-  border-radius: 5px;
+section h2 {
   cursor: pointer;
-  transition: background-color 0.2s;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-#show-more-btn:hover {
-  background-color: #29b6f6;
+.header-left {
+  flex: 1 1 60%;
 }
-.skill-stars {
-  font-size: 1rem;
-  color: #ffc107; /* золотой */
-  margin-left: 8px;
+.header-right {
+  flex: 1 1 35%;
+  text-align: right;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contact-list li {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
 }
