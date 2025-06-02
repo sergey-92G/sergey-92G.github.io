@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       button.textContent = body.classList.contains('dark-theme') ? 'Светлая тема' : 'Тёмная тема';
     }
   });
-
+  
   document.addEventListener('DOMContentLoaded', function () {
     const btn = document.getElementById('show-more-btn');
     const hiddenProjects = document.querySelectorAll('.extra-project');
@@ -32,5 +32,5 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.style.display = 'none'; // скрываем кнопку после нажатия
     });
   });
-  
+
   
