@@ -1,43 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Моё резюме | СЕргей</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>СЕргей | Инженер-программист</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>СЕргей</h1>
-    <p>Инженер-программист | Python, C++, Linux, СУБД</p>
+    <div class="container">
+      <h1>СЕргей</h1>
+      <p>Инженер-программист | Python • C++17 • Linux • PostgreSQL</p>
+    </div>
   </header>
+
   <section id="about">
-    <h2>Обо мне</h2>
-    <p>Практик, инженер, исследователь нестандартных решений. Работаю с C++, Python и Linux.</p>
+    <div class="container">
+      <h2>Обо мне</h2>
+      <p>
+        Практикующий инженер, ориентирован на результат и автоматизацию. Применяю критическое мышление и нестандартные подходы к решению задач. Опыт в системном программировании, работе с СУБД, сетевыми протоколами и низкоуровневым кодом под Linux.
+      </p>
+    </div>
   </section>
+
   <section id="skills">
-    <h2>Навыки</h2>
-    <ul>
-      <li>C++17 / STL / Потоки</li>
-      <li>Python / Системное программирование</li>
-      <li>Linux / Bash / Git</li>
-      <li>PostgreSQL / SQLite</li>
-    </ul>
+    <div class="container">
+      <h2>Ключевые навыки</h2>
+      <ul>
+        <li>C++17: STL, многопоточность, работа с памятью</li>
+        <li>Python: CLI, парсеры, телеграм-боты, проекты на чистой архитектуре</li>
+        <li>Linux: Bash, systemd, сетевые утилиты</li>
+        <li>СУБД: PostgreSQL, SQLite, ORM</li>
+        <li>Git: командная работа, pull request, Git Flow</li>
+      </ul>
+    </div>
   </section>
+
   <section id="projects">
-    <h2>Проекты</h2>
-    <ul>
-      <li><a href="https://github.com/yourname/project1">Git-менеджер на Python</a></li>
-      <li><a href="https://github.com/yourname/project2">Игра на Pygame: Машинка</a></li>
-    </ul>
+    <div class="container">
+      <h2>Проекты</h2>
+      <div class="project">
+        <h3><a href="https://github.com/yourusername/git-manager-cli" target="_blank">Git-менеджер CLI</a></h3>
+        <p>Консольное TUI-приложение на Python для управления локальными репозиториями. Встроенный git log, ветки, удалённые команды. Поддержка Windows.</p>
+      </div>
+      <div class="project">
+        <h3><a href="https://github.com/yourusername/pygame-racing" target="_blank">Игра «Машинка»</a></h3>
+        <p>Игра на Pygame с видом сверху, ИИ-противником, генерацией трасс, режимами «догонялки» и препятствий. Главное меню, выбор настроек и машин.</p>
+      </div>
+    </div>
   </section>
+
   <section id="contact">
-    <h2>Контакты</h2>
-    <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourname">github.com/yourname</a></p>
+    <div class="container">
+      <h2>Контакты</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    </div>
   </section>
+
   <footer>
-    <p>&copy; 2025 СЕргей</p>
+    <div class="container">
+      <p>&copy; 2025 СЕргей. Все права защищены.</p>
+    </div>
   </footer>
+
 </body>
 </html>
