@@ -199,3 +199,57 @@ p {
 .personal-info li {
   margin: 2px 0;
 }
+h2.toggleable {
+  position: relative;
+  padding-right: 20px;
+}
+
+h2.toggleable::after {
+  content: '▼'; /* стрелка вниз (по умолчанию — раскрыто) */
+  position: absolute;
+  right: 0;
+  font-size: 0.9em;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+h2.toggleable.collapsed::after {
+  transform: rotate(-90deg); /* стрелка вбок (свернуто) */
+}
+#download-pdf-link {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#download-pdf-link:hover {
+  text-decoration: underline;
+}
+/* Компактный стиль секции */
+section.compact p,
+section.compact li {
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin: 2px 0;
+}
+
+section.compact ul {
+  margin: 6px 0;
+  padding-left: 16px;
+}
+
+section.compact h4 {
+  font-size: 0.95rem;
+  margin: 6px 0 2px 0;
+}
+
+section.compact .course-group {
+  margin-top: 5px;
+}
+
+.edu-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
